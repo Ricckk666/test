@@ -24,10 +24,9 @@ jobs:
       - run: npm run build
         working-directory: ./web-frontend/testingtt/  
       - name: Surge Deploy
-        working-directory: ./web-frontend/testingtt/
         env:
           super_secret: ${{ secrets.SURGE_TOKEN}}
-          working-directory: ./web-frontend/testingtt/
+        working-directory: ./web-frontend/testingtt/
         run: | 
           exho "questo è il mio segreto ${{super_secret}}"
           export SURGE_TOKEN=$super_secret
