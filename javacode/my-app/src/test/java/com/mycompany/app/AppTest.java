@@ -2,6 +2,8 @@ package com.mycompany.app;
 
 import static org.junit.Assert.assertTrue;
 
+import java.beans.Transient;
+
 import org.junit.Test;
 
 /**
@@ -17,4 +19,17 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    @Test
+    public void testMain(){
+        app.main(null);
+    }
+
+    @Transientpublic void Appinstance(){
+        App x = new App();
+
+    }
+
+
+
 }
