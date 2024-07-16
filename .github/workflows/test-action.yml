@@ -10,7 +10,7 @@ jobs:
       #   with:
       #     node-version: '20'
       - name: Test run
-      run: | 
+        run: | 
           date
           ls -la
           pwd 
@@ -24,8 +24,8 @@ jobs:
       - run: npm run build
         working-direciory: ./web-frontend/testingtt/  
       - name: Surge Deploy
-      working-direciory: ./web-frontend/testingtt/
-       run: | 
+        working-direciory: ./web-frontend/testingtt/
+        run: | 
           export SURGE_TOKEN=cdc64241c95e91b0b2649ccccb68a643
           surge . upset-color.surge.sh
       - run: echo "Fineeeeeeeeeeeeeeeeeeeeeeeeeeee"
