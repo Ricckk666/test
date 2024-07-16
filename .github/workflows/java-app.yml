@@ -29,3 +29,4 @@ jobs:
           architecture: x64
       - run: mvn -version
       - run: java -version
+        working-directory: ./workspaces/test/javacode/my-app 
