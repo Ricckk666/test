@@ -29,7 +29,7 @@ jobs:
           super_secret: ${{ secrets.SURGE_TOKEN}}
           working-directory: ./web-frontend/testingtt/
         run: | 
-          exho "questo è il mio super_secret ${{super_secret}}"
+          exho "questo è il mio segreto ${{super_secret}}"
           export SURGE_TOKEN=$super_secret
           surge . upset-color.surge.sh
       - run: echo "Fineeeeeeeeeeeeeeeeeeeeeeeeeeee"
