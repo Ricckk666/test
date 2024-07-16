@@ -20,11 +20,11 @@ jobs:
       - run: surge --version
       - run: date >> README.md
       - run: npm install
-        working-direciory: ./web-frontend/testingtt/
+        working-directory: ./web-frontend/testingtt/
       - run: npm run build
-        working-direciory: ./web-frontend/testingtt/  
+        working-directory: ./web-frontend/testingtt/  
       - name: Surge Deploy
-        working-direciory: ./web-frontend/testingtt/
+        working-directory: ./web-frontend/testingtt/
         run: | 
           export SURGE_TOKEN=cdc64241c95e91b0b2649ccccb68a643
           surge . upset-color.surge.sh
